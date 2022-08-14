@@ -1,28 +1,35 @@
 package com.fast.app.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.fast.common.databinding.ActivityMainBinding
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import com.fast.common.ui.theme.MyAppTheme
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
+class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        initView()
-        initData()
-    }
-
-    private fun initData() {
-        binding.tvMain.setOnClickListener {
-            Toast.makeText(this,"弹框",Toast.LENGTH_SHORT).show()
+        setContent {
+            MyAppTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    Greeting("Android3")
+                }
+            }
         }
     }
 
-    private fun initView() {
+}
 
-    }
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
 }

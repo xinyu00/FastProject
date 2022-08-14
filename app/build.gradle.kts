@@ -1,7 +1,7 @@
 plugins {
     id(Deploy.pluginAndroidId)
     id(Deploy.pluginKotlin)
-    id(Deploy.pluginMatrix)
+//    id(Deploy.pluginMatrix)
 }
 
 android {
@@ -34,7 +34,9 @@ android {
             )
         }
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     //输出文件
     android.applicationVariants.all {
         //编译类型
@@ -83,20 +85,21 @@ android {
         }
     }
 
-    matrix{
-        trace{
-            isEnable  =true
-            baseMethodMapFile = "${project.buildDir}/matrix_output/Debug.methodmap"
-            blackListFile = "${project.projectDir}/matrixTrace/blackMethodList.txt"
-        }
-    }
-
+//    matrix{
+//        trace{
+//            isEnable  =true
+//            baseMethodMapFile = "${project.buildDir}/matrix_output/Debug.methodmap"
+//            blackListFile = "${project.projectDir}/matrixTrace/blackMethodList.txt"
+//        }
+//    }
     kotlinOptions {
         jvmTarget = "11"
     }
-
     buildFeatures {
-        viewBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Deploy.composeVersion
     }
 
 

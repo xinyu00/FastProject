@@ -4,10 +4,15 @@ import android.app.Application
 import android.content.Context
 import com.fast.common.app.AppLifecycle
 import com.fast.common.app.ApplicationDelegate
+import com.fast.common.ui.theme.AppTheme
 
-class BaseApplication: Application() {
+open class BaseApplication: Application() {
 
+    companion object{
+        lateinit var appContext: Application
 
+        var currentTheme = AppTheme.Light
+    }
     private lateinit var mAppDelegate: AppLifecycle
 
     override fun attachBaseContext(base: Context?) {
@@ -16,6 +21,7 @@ class BaseApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
+
         mAppDelegate = ApplicationDelegate(this)
         mAppDelegate.attachBaseContext(baseContext)
         mAppDelegate.onCreate(this)

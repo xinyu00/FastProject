@@ -33,7 +33,10 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        viewBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Deploy.composeVersion
     }
 }
 
@@ -42,14 +45,17 @@ dependencies {
     Deploy.commonDep.forEach { value ->
         api(value)
     }
-    implementation(group = "com.tencent.matrix",name = "matrix-android-lib",version = Deploy.matrixVersion)
-    implementation( group= "com.tencent.matrix", name= "matrix-android-lib", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-android-commons", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-trace-canary", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-resource-canary-android", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-resource-canary-common", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-io-canary", version= Deploy.matrixVersion)
-    implementation( group= "com.tencent.matrix", name= "matrix-sqlite-lint-android-sdk", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-battery-canary", version= Deploy.matrixVersion)
-    implementation (group= "com.tencent.matrix", name= "matrix-hooks", version= Deploy.matrixVersion)
+    api(project(":lib_res"))
+
+
+//    implementation(group = "com.tencent.matrix",name = "matrix-android-lib",version = Deploy.matrixVersion)
+//    implementation( group= "com.tencent.matrix", name= "matrix-android-lib", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-android-commons", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-trace-canary", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-resource-canary-android", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-resource-canary-common", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-io-canary", version= Deploy.matrixVersion)
+//    implementation( group= "com.tencent.matrix", name= "matrix-sqlite-lint-android-sdk", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-battery-canary", version= Deploy.matrixVersion)
+//    implementation (group= "com.tencent.matrix", name= "matrix-hooks", version= Deploy.matrixVersion)
 }

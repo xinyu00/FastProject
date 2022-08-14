@@ -2,7 +2,8 @@ package com.fast.common.app
 
 import android.app.Application
 import android.content.Context
-import com.cpzero.lib_base.integration.GlobalModel
+import com.fast.common.integration.GlobalModel
+import com.fast.common.utils.CoilImageLoader
 
 
 class ApplicationDelegate(application: Application) : AppLifecycle {
@@ -33,6 +34,8 @@ class ApplicationDelegate(application: Application) : AppLifecycle {
 //            ARouter.openLog()
 //        }
 //        ARouter.init(app)
+
+        CoilImageLoader.initImageLoader(app)
 
         //执行开发者外部注册的生命周期
         for (lifecycle in mAppLifeCycles) {

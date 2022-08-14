@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ImportantProject">
         <activity
-            android:name="com.fast.app.MainActivity"
+            android:name="com.fast.app.ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
