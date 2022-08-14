@@ -20,7 +20,7 @@ object Deploy {
     const val espressoCoreVersion = "3.4.0"
     const val materialVersion = "1.6.1"
     const val matrixVersion = "2.0.8"
-    const val lifecycleVersion = "2.3.0"
+    const val lifecycleVersion = "2.5.1"
 
     //插件
     const val pluginAndroidId = "com.android.application"
@@ -57,7 +57,7 @@ object Deploy {
 
     // lifecycle
     val livedataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
-    val viewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion}"
+    val viewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
     val runtimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
     val lifecycleProcess = "androidx.lifecycle:lifecycle-process:$lifecycleVersion"
 
