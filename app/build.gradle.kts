@@ -29,9 +29,16 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            buildConfigField("String", "BASE_URL", "\"https://www.wanandroid.com/\"")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
+        }
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://www.wanandroid.com/\"")
+            isMinifyEnabled =  false
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     buildFeatures {

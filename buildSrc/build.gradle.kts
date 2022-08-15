@@ -7,12 +7,12 @@ buildscript{            // 构建
         gradlePluginPortal()
     }
     dependencies{       //依赖
-        classpath(kotlin("gradle-plugin","1.6.10"))
+        classpath(kotlin("gradle-plugin","1.7.0"))
     }
 }
 dependencies {
     implementation(gradleKotlinDsl())
-    implementation(kotlin("stdlib","1.6.10"))
+    implementation(kotlin("stdlib","1.7.0"))
 }
 
 repositories{

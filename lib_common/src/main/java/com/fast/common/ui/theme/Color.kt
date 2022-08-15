@@ -29,15 +29,6 @@ val selfMsgBgColorLight = Color(0x80FF0000)
 val selfMsgBgColorDark = Color(0x4DFF0000)
 val selfMsgBgColorPink = PrimaryColorPink.copy(alpha = 0.8f)
 
-
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
-
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
-
 val themMsgBgColor: Color
     get() {
         return when (BaseApplication.currentTheme) {

@@ -21,7 +21,7 @@ open class BaseApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-
+        appContext = this
         mAppDelegate = ApplicationDelegate(this)
         mAppDelegate.attachBaseContext(baseContext)
         mAppDelegate.onCreate(this)
