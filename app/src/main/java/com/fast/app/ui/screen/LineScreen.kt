@@ -1,6 +1,5 @@
 package com.fast.app.ui.screen
 
-import android.annotation.SuppressLint
 import android.content.res.Configuration
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -137,7 +136,7 @@ fun LineListItem(itemData: String, onClickCallBack: (String) -> Unit) {
     }
 }
 
-@Preview(showBackground = true, device = Devices.PIXEL_4, uiMode = Configuration.UI_MODE_NIGHT_NO)
+@Preview(showBackground = true)
 @Composable
 fun PreviewLineListItem() {
     LineListItem("StephenPreview", onClickCallBack = {

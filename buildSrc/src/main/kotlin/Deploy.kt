@@ -12,7 +12,7 @@ object Deploy {
     // 版本控制
     const val kotlinVersion = "1.7.0"
     const val gradleVersion = "7.1.1"
-    const val appcompatVersion = "1.4.1"
+    const val appcompatVersion = "1.5.0-rc01"
     const val constraintlayoutVersion = "2.1.3"
     const val junitVersion = "4.13.2"
     const val testJunitVersion = "1.1.3"
@@ -22,7 +22,7 @@ object Deploy {
     const val lifecycleVersion = "2.5.1"
     const val composeVersion = "1.2.0"
     const val composeMaterial3Version = "1.0.0-alpha01"
-    const val composeActivityVersion = "1.3.1"
+    const val composeActivityVersion = "1.5.1"
     const val composeNavigationVersion = "2.4.0-alpha06"
     const val coilVersion = "1.3.2"
     const val accompanistVersion = "0.16.1"
@@ -78,9 +78,9 @@ object Deploy {
     val composeNavigation = "androidx.navigation:navigation-compose:$composeNavigationVersion"
     val composeConstraintlayout= "androidx.constraintlayout:constraintlayout-compose:1.0.0-beta02"
 
+    val composeDebugUI = "androidx.compose.ui:ui-tooling:$composeVersion"
     // compose测试
     val composeTestJunit = "androidx.compose.ui:ui-test-junit4:$composeVersion"
-    val composeTestUI = "androidx.compose.ui:ui-tooling:$composeVersion"
     val composeTestUITool = "androidx.compose.ui:ui-test-manifest:$composeVersion"
 
     // lifecycle
@@ -116,6 +116,20 @@ object Deploy {
         accompanistSystemuicontroller,
         composeConstraintlayout,
         composeMaterial
+    )
+
+    val debugDep = mutableListOf(
+        composeDebugUI,
+        composeTestUITool
+    )
+
+    val testDep = mutableListOf(
+        junit,
+    )
+    val androidTestDep = mutableListOf(
+        testJunit,
+        espressoCore,
+        composeTestJunit
     )
 
 

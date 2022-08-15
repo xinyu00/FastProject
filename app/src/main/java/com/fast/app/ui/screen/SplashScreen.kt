@@ -1,6 +1,5 @@
-package com.fast.app.ui.viewscreen
+package com.fast.app.ui.screen
 
-import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*

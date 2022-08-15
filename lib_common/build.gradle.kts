@@ -45,8 +45,16 @@ dependencies {
     Deploy.commonDep.forEach { value ->
         api(value)
     }
+    Deploy.debugDep.forEach { value ->
+        debugImplementation(value)
+    }
+    Deploy.androidTestDep.forEach { value ->
+        androidTestImplementation(value)
+    }
+    Deploy.testDep.forEach { value ->
+        testImplementation(value)
+    }
     api(project(":lib_res"))
-
 
 //    implementation(group = "com.tencent.matrix",name = "matrix-android-lib",version = Deploy.matrixVersion)
 //    implementation( group= "com.tencent.matrix", name= "matrix-android-lib", version= Deploy.matrixVersion)

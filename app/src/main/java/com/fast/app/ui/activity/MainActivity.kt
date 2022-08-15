@@ -11,7 +11,7 @@ import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
 import com.fast.app.ui.screen.HomeScreen
 import com.fast.app.ui.screen.LineScreen
-import com.fast.app.ui.viewscreen.SplashScreen
+import com.fast.app.ui.screen.SplashScreen
 import com.fast.common.ui.theme.MyAppTheme
 import com.fast.common.utils.RouteScreen
 

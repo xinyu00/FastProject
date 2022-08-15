@@ -175,7 +175,7 @@ fun MainUiContent(navController: NavHostController? = null){
     }
 }
 
-@Preview(showBackground = true, device = Devices.PIXEL_4, uiMode = Configuration.UI_MODE_NIGHT_NO)
+@Preview(showBackground = true)
 @Composable
 fun PreviewMainUiContent() {
     MainUiContent()
