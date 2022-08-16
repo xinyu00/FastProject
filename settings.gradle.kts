@@ -20,3 +20,4 @@ dependencyResolutionManagement {
 rootProject.name = "FastProject"
 include(":app")
 include(":lib_common")
+includeBuild("pluginVersion")

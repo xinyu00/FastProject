@@ -2,7 +2,7 @@ package com.fast.common.app
 
 import android.app.Application
 import android.content.Context
-import com.cpzero.lib_base.integration.GlobalModel
+import com.fast.common.integration.GlobalModel
 
 
 class ApplicationDelegate(application: Application) : AppLifecycle {

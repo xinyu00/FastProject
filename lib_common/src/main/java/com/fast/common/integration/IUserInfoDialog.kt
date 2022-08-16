@@ -1,4 +1,4 @@
-package com.cpzero.lib_base.integration
+package com.fast.common.integration
 
 interface IUserInfoListener {
     fun showInfo(userId: String?)

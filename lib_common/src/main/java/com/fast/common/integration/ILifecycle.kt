@@ -1,8 +1,8 @@
-package com.cpzero.lib_base.integration
+package com.fast.common.integration
 
 import android.app.Application
 import android.content.Context
-import com.cpzero.lib_base.app.AppLifecycle
+import com.fast.common.app.AppLifecycle
 
 interface ILifecycle {
     /**
@@ -10,15 +10,6 @@ interface ILifecycle {
      */
     fun applySingleton(app: Context)
 
-    /**
-     * 執行多次
-     */
-    fun applyInit(
-        app: Context,
-        tcpConfig: TcpConfig?,
-        imConfig: ArrayList<IMConfig>?,
-        rtcConfig: ArrayList<RtcConfig>?
-    )
 
     fun injectAppLifecycle(context: Context, lifecycle: MutableList<AppLifecycle>)
 

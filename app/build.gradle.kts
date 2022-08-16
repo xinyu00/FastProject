@@ -1,7 +1,11 @@
+import com.fast.plugin.Deploy
+
 plugins {
-    id(Deploy.pluginAndroidId)
-    id(Deploy.pluginKotlin)
-    id(Deploy.pluginMatrix)
+    id("com.fast.plugin")
+    id("org.jetbrains.kotlin.android")
+
+    id("com.android.application")
+//    id(Deploy.pluginMatrix)
 }
 
 android {
@@ -83,13 +87,13 @@ android {
         }
     }
 
-    matrix{
-        trace{
-            isEnable  =true
-            baseMethodMapFile = "${project.buildDir}/matrix_output/Debug.methodmap"
-            blackListFile = "${project.projectDir}/matrixTrace/blackMethodList.txt"
-        }
-    }
+//    matrix{
+//        trace{
+//            isEnable  =true
+//            baseMethodMapFile = "${project.buildDir}/matrix_output/Debug.methodmap"
+//            blackListFile = "${project.projectDir}/matrixTrace/blackMethodList.txt"
+//        }
+//    }
 
     kotlinOptions {
         jvmTarget = "11"

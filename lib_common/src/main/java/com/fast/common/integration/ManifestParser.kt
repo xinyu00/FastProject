@@ -1,4 +1,4 @@
-package com.cpzero.lib_base.integration
+package com.fast.common.integration
 
 import android.content.Context
 import android.content.pm.PackageManager

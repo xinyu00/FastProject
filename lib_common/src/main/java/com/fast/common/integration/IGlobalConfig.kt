@@ -1,7 +1,5 @@
-package com.cpzero.lib_base.integration
+package com.fast.common.integration
 
-import com.cpzero.lib_base.app.GlobalConfigModule
 
 interface IGlobalConfig {
-    fun applyOption(builder: GlobalConfigModule.Builder)
 }
