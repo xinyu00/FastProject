@@ -26,7 +26,6 @@ abstract class XBaseActivity<B : ViewBinding, VM : BaseViewModel> : BaseActivity
     /**
      * 注册ViewBinding和ViewModel
      */
-    @SuppressWarnings("unchecked")
     private fun injectViewBindingAndViewModel() {
         try {
             val type = javaClass.genericSuperclass as ParameterizedType
@@ -51,11 +50,17 @@ abstract class XBaseActivity<B : ViewBinding, VM : BaseViewModel> : BaseActivity
         }
     }
 
-    abstract fun loadData()
+    open fun loadData(){
 
-    abstract fun initViews()
+    }
 
-    abstract fun initEvent()
+    open fun initViews(){
+
+    }
+
+    open fun initEvent(){
+
+    }
 
 
 }

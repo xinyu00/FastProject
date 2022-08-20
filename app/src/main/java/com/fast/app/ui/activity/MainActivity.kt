@@ -9,17 +9,10 @@ class MainActivity : XBaseActivity<ActivityMainBinding,BaseViewModel>() {
 
 
 
-    override fun loadData() {
-
-    }
-
     override fun initViews() {
         mViewBinding.tvMain.setOnClickListener {
             Toast.makeText(this,"弹框",Toast.LENGTH_SHORT).show()
         }
     }
 
-    override fun initEvent() {
-
-    }
 }
