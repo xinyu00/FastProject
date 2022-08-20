@@ -1,28 +1,25 @@
 package com.fast.app.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.widget.Toast
 import com.fast.app.databinding.ActivityMainBinding
+import com.fast.common.base.XBaseActivity
+import com.fast.common.vm.BaseViewModel
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : XBaseActivity<ActivityMainBinding,BaseViewModel>() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        initView()
-        initData()
+
+
+    override fun loadData() {
+
     }
 
-    private fun initData() {
-        binding.tvMain.setOnClickListener {
+    override fun initViews() {
+        mViewBinding.tvMain.setOnClickListener {
             Toast.makeText(this,"弹框",Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun initView() {
+    override fun initEvent() {
 
     }
 }

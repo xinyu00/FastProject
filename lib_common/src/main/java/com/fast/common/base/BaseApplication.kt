@@ -20,7 +20,11 @@ class BaseApplication: Application() {
         mAppDelegate.attachBaseContext(baseContext)
         mAppDelegate.onCreate(this)
     }
-
+    companion object {
+        @JvmStatic
+        lateinit var instance: BaseApplication
+            private set
+    }
 
     override fun onTerminate() {
         super.onTerminate()
