@@ -21,3 +21,4 @@ rootProject.name = "FastProject"
 include(":app")
 include(":lib_common")
 include(":lib_res")
+includeBuild("pluginVersion")

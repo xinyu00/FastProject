@@ -1,3 +1,5 @@
+package com.fast.plugin
+
 import org.gradle.kotlin.dsl.provideDelegate
 import java.text.SimpleDateFormat
 import java.util.*

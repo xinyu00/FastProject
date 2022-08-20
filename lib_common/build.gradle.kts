@@ -1,4 +1,6 @@
+import com.fast.plugin.Deploy
 plugins {
+    id("com.fast.plugin")
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
 

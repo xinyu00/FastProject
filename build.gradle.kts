@@ -7,9 +7,9 @@ buildscript{
 
 
 plugins{
-    id(Deploy.pluginAndroidId) version(Deploy.gradleVersion)  apply(false)
-    id(Deploy.pluginAndroidLibrary) version(Deploy.gradleVersion)  apply(false)
-    id(Deploy.pluginKotlin) version(Deploy.kotlinVersion) apply(false)
+    id("com.android.application") version("7.1.1")  apply(false)
+    id("com.android.library") version("7.1.1")  apply(false)
+    id("org.jetbrains.kotlin.android") version("1.7.0") apply(false)
 }
 
 
