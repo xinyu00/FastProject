@@ -105,5 +105,5 @@ android {
 }
 
 dependencies {
-    implementation(project(mapOf("path" to ":lib_common")))
+    implementation(project(mapOf("path" to ":module_main")))
 }

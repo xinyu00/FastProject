@@ -1,13 +1,7 @@
 import com.fast.plugin.Deploy
 
 plugins {
-    val isBuildModule = false
-    if (isBuildModule){  // 作为独立app运行
-        id("com.android.application")
-    }else{
-        id("com.android.library")
-    }
-    id("org.jetbrains.kotlin.android")
+
 }
 
 android {
@@ -30,8 +24,16 @@ android {
             )
         }
     }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-    val isBuildModule:Boolean by project
+    api(project(mapOf("path" to ":lib_common")))
 }

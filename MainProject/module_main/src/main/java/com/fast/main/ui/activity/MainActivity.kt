@@ -1,12 +1,11 @@
-package com.fast.app.ui.activity
+package com.fast.main.ui.activity
 
 import android.widget.Toast
-import com.fast.app.databinding.ActivityMainBinding
 import com.fast.common.base.XBaseActivity
 import com.fast.common.vm.BaseViewModel
+import com.fast.main.databinding.ActivityMainBinding
 
 class MainActivity : XBaseActivity<ActivityMainBinding,BaseViewModel>() {
-
 
 
     override fun initViews() {
