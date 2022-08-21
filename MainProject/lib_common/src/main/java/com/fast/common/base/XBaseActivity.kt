@@ -17,10 +17,14 @@ abstract class XBaseActivity<B : ViewBinding, VM : BaseViewModel> : BaseActivity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         injectViewBindingAndViewModel()
-
+        initImmersionBar()
         initViews()
         initEvent()
         loadData()
+    }
+
+    private fun initImmersionBar() {
+//        ImmersionBar.with(this).init()
     }
 
     /**

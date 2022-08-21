@@ -22,6 +22,7 @@ object Deploy {
     const val materialVersion = "1.6.1"
     const val matrixVersion = "2.0.8"
     const val lifecycleVersion = "2.5.1"
+    const val immersionBarVersion = "3.2.2"
 
     //插件
     const val pluginAndroidId = "com.android.application"
@@ -55,6 +56,10 @@ object Deploy {
     const val testJunit = "androidx.test.ext:junit:$testJunitVersion"
     const val espressoCore = "androidx.test.espresso:espresso-core:$espressoCoreVersion"
 
+    // 第三方依赖
+    const val immersionBar = "com.geyifeng.immersionbar:immersionbar:$immersionBarVersion"
+    const val immersionBarKtx = "com.geyifeng.immersionbar:immersionbar-ktx:$immersionBarVersion"
+
 
     // lifecycle
     val livedataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
@@ -75,7 +80,20 @@ object Deploy {
         viewmodelKtx,
         runtimeKtx,
         lifecycleProcess,
+        immersionBar,
+        immersionBarKtx
+    )
 
+    val debugDep = mutableListOf<String>(
+
+    )
+
+    val testDep = mutableListOf(
+        junit,
+    )
+    val androidTestDep = mutableListOf(
+        testJunit,
+        espressoCore
     )
 
 
