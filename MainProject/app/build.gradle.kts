@@ -1,10 +1,7 @@
 import com.fast.plugin.Deploy
 
 plugins {
-    id("com.fast.plugin")
-    id("org.jetbrains.kotlin.android")
 
-    id("com.android.application")
 //    id(Deploy.pluginMatrix)
 }
 

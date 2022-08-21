@@ -1,8 +1,5 @@
 import com.fast.plugin.Deploy
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
-    id("com.fast.plugin")
 }
 
 android {
@@ -52,7 +49,7 @@ dependencies {
     Deploy.testDep.forEach { value ->
         testImplementation(value)
     }
-
+    api(project(":lib_res"))
 //    implementation(group = "com.tencent.matrix",name = "matrix-android-lib",version = Deploy.matrixVersion)
 //    implementation( group= "com.tencent.matrix", name= "matrix-android-lib", version= Deploy.matrixVersion)
 //    implementation (group= "com.tencent.matrix", name= "matrix-android-commons", version= Deploy.matrixVersion)

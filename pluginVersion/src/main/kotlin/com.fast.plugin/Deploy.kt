@@ -10,6 +10,8 @@ object Deploy {
         return simpleDateFormat.format(System.currentTimeMillis())
     }
 
+    val isBuildModule: Boolean = false
+
     // 版本控制
     const val kotlinVersion = "1.6.10"
     const val gradleVersion = "7.1.1"
@@ -36,7 +38,7 @@ object Deploy {
     //SDK版本
     const val compileSdkVersion = 32
     const val applicationId = "com.fast.app"
-    const val minSdkVersion = 21
+    const val minSdkVersion = 23
     const val targetSdkVersion = 32
 
     //版本
