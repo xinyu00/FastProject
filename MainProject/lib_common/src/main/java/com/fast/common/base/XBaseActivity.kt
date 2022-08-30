@@ -72,12 +72,19 @@ abstract class XBaseActivity<B : ViewBinding, VM : BaseViewModel> : BaseActivity
         ImmersionBar.with(this).init()
     }
 
-    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
-        if (ev.action == MotionEvent.ACTION_DOWN) {
-            val v = currentFocus
-            if (isShouldHideKeyboard(v!!, ev)) {
-                v.requestFocus()
-                hideKeyboard(v.windowToken)
+//    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+
+    //    }
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        if (ev != null) {
+            if (ev.action == MotionEvent.ACTION_DOWN) {
+                val v = currentFocus
+                v?.let {
+                    if (isShouldHideKeyboard(v, ev)) {
+                        v.requestFocus()
+                        hideKeyboard(v.windowToken)
+                    }
+                }
             }
         }
         return super.dispatchTouchEvent(ev)
@@ -117,15 +124,15 @@ abstract class XBaseActivity<B : ViewBinding, VM : BaseViewModel> : BaseActivity
         }
     }
 
-    open fun loadData(){
+    open fun loadData() {
 
     }
 
-    open fun initViews(){
+    open fun initViews() {
 
     }
 
-    open fun initEvent(){
+    open fun initEvent() {
 
     }
 

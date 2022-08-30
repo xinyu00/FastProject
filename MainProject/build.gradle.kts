@@ -24,11 +24,3 @@ subprojects {
 //        classpath(Deploy.matrix)
 //    }
 //}
-
-tasks{
-    val clean by registering(Delete::class){
-        delete(rootProject.buildDir)
-    }
-}
-
-

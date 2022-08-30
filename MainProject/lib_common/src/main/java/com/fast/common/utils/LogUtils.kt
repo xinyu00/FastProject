@@ -1,7 +1,6 @@
 package com.fast.common.utils
 
 import android.util.Log
-import com.cpzero.lib_base.utils.Timber
 import java.util.*
 
 

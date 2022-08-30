@@ -25,6 +25,9 @@ object Deploy {
     const val matrixVersion = "2.0.8"
     const val lifecycleVersion = "2.5.1"
     const val immersionBarVersion = "3.2.2"
+    const val retrofitVersion = "2.9.0"
+    const val gsonVersion = "2.8.6"
+    const val okhttpVersion = "4.9.3"
 
     //插件
     const val pluginAndroidId = "com.android.application"
@@ -61,6 +64,11 @@ object Deploy {
     // 第三方依赖
     const val immersionBar = "com.geyifeng.immersionbar:immersionbar:$immersionBarVersion"
     const val immersionBarKtx = "com.geyifeng.immersionbar:immersionbar-ktx:$immersionBarVersion"
+    const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    const val retrofitConverterGson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    const val gson = "com.google.code.gson:gson:$gsonVersion"
+    const val okhttp = "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    const val okhttpLogging = "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
 
 
     // lifecycle
@@ -83,7 +91,12 @@ object Deploy {
         runtimeKtx,
         lifecycleProcess,
         immersionBar,
-        immersionBarKtx
+        immersionBarKtx,
+        retrofit,
+        retrofitConverterGson,
+        gson,
+        okhttp,
+        okhttpLogging
     )
 
     val debugDep = mutableListOf<String>(

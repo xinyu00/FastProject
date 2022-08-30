@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FastProject</string>
+    <string name="token_error">登录已过期</string>
+    <string name="login_other_device">账号已在其他设备登录</string>
+    <string name="service_upgrade">服务器正在升级</string>
 </resources>

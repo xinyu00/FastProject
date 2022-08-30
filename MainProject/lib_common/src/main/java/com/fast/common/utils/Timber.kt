@@ -1,4 +1,4 @@
-package com.cpzero.lib_base.utils
+package com.fast.common.utils
 
 import android.util.Log
 import org.jetbrains.annotations.NonNls

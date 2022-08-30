@@ -7,4 +7,54 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+
+    <!--  黑色-->
+    <color name="color_black">#000000</color>
+    <color name="color_black50">#80000000</color>
+    <color name="color_shadow">#33B6B6B6</color>
+    <color name="color_black10">#1A000000</color>
+    <color name="color_black20">#33000000</color>
+    <color name="color_black30">#5C000000</color>
+    <color name="color_black36">#5C000000</color>
+    <color name="color_black40">#66000000</color>
+    <color name="color_black60">#99000000</color>
+    <color name="color_black64">#A3000000</color>
+    <color name="color_black70">#B3000000</color>
+    <color name="color_black80">#CC000000</color>
+    <color name="color_7F7F7F">#7f7f7f</color>
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <color name="color_FAF9F7">#FAF9F7</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_E2E2E2">#E2E2E2</color>
+    <color name="color_B6B6B6">#B6B6B6</color>
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_FF3E7E">#FF3E7E</color>
+    <color name="color_0FFF3E7E">#0FFF3E7E</color>
+    <color name="color_181818">#181818</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_80181818">#B3181818</color>
+    <color name="color_FFD4E2">#FFD4E2</color>
+    <color name="color_DBB8C8">#DBB8C8</color>
+    <color name="color_FF7364">#FF7364</color>
+    <color name="color_FF2C8D">#FF2C8D</color>
+    <color name="color_FF9139">#FF9139</color>
+    <color name="color_FFD883">#FFD883</color>
+    <color name="color_F27337">#F27337</color>
+    <color name="color_59B0B3">#59B0B3</color>
+    <color name="color_FF6E33">#FF6E33</color>
+    <color name="color_AAABB3">#AAABB3</color>
+    <color name="color_FFB0D1">#FFB0D1</color>
+    <color name="color_FAE5EA">#FAE5EA</color>
+    <color name="color_FEB5C2">#FEB5C2</color>
+    <color name="color_00E268">#00E268</color>
+    <color name="color_70C160">#70C160</color>
+    <color name="color_147AFF">#147AFF</color>
+    <color name="clickTextColor">#4ECBFE</color>
+    <color name="color_red">#ff0000</color>
+
 </resources>

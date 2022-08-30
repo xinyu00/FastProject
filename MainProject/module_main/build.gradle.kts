@@ -37,3 +37,13 @@ android {
 dependencies {
     api(project(mapOf("path" to ":lib_common")))
 }
+
+
+tasks{
+    val copyJar by registering(Copy::class){
+        from("build/libs/")
+        into("library/libs/")
+        include("sdk.jar")
+        println("====> sdk.jar copy complete")
+    }
+}

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.fast.common">
 
+    <application android:usesCleartextTraffic="true">
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <!--
+                tools:node="remove" 懒加载，即不必再app启动时加载；
+                tools:node="merge" 在app启动时加载，这样启动消费较大；
 
+                懒加载的需要手动启动：  AppInitializer.getInstance(context).initializeComponent(StoreInitializer.class);
+            -->
+            <!--            ConfigInitializer 被下边的 StoreInitializer 依赖，可以不必声明-->
+            <meta-data
+                android:name="com.fast.common.integration.GlobalConfigInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
 </manifest>
